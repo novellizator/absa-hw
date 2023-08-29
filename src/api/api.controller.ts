@@ -6,11 +6,6 @@ import { LuhnService } from '../luhn/luhn.service';
 export class ApiController {
   constructor(private readonly luhnService: LuhnService) {}
 
-  @Get()
-  getHello(): string {
-    return 'api helloooo';
-  }
-
   @Get('/validate/:id')
   // NOTE: on a larger project I'd use ParseIntPipe and an exception filter;
   // now it's an overkill
