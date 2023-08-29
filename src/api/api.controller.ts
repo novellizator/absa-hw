@@ -1,6 +1,6 @@
 import { Controller, Get, Param, Res, HttpStatus } from '@nestjs/common';
 import { Response } from 'express';
-import { LuhnService } from 'src/luhn/luhn.service';
+import { LuhnService } from '../luhn/luhn.service';
 
 @Controller('api')
 export class ApiController {
