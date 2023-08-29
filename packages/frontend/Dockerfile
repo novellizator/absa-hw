@@ -7,6 +7,8 @@ WORKDIR /app
 # Copy the rest of the frontend application code to the container
 COPY packages/frontend .
 
+COPY packages/frontend/.env .
+
 # Install app dependencies
 RUN yarn install
 
